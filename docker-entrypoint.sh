@@ -19,7 +19,7 @@ if [ "$1" = 'couchdb' ]; then
   chmod 775 /usr/local/etc/couchdb/*.d
   HOME=/var/lib/couchdb exec gosu couchdb "$@"
   
-  curl -X PUT http://192.168.59.103:5984/baseball
+  # curl -X PUT http://192.168.59.103:5984/baseball
 fi
 
 exec "$@"
